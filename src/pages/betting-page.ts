@@ -1,9 +1,11 @@
-import { CustomHTMLElement } from '../utils'
-
 import '../components/betting-list/betting-list'
+
+import { CustomHTMLElement } from '../utils'
+import css from './betting-page.scss'
 
 const template = document.createElement('template')
 template.innerHTML = `
+<style>${css}</style>
 <div class="betting-page">
     <arl-betting-list></arl-betting-list>
 </div>
